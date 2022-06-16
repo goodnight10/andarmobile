@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'noto';
+    src: url('../fonts/NotoSansKR-Light-Hestia.woff') format('woff');
+    font-weight: 300;
+}
+/* 웹용폰트woff 웹용폰트 압축되면 woff2 */
+@font-face {
+    font-family: 'noto';
+    src: url('../fonts/NotoSansKR-Regular-Hestia.woff') format('woff');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'noto';
+    src: url('../fonts/NotoSansKR-Medium-Hestia.woff') format('woff');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'noto';
+    src: url('../fonts/NotoSansKR-Bold-Hestia.woff') format('woff');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'gil';
+    src: url('../fonts/Gilroy-Regular.woff2') format('woff2');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'gil';
+    src: url('../fonts/Gilroy-Medium.woff2') format('woff2');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'gil';
+    src: url('../fonts/Gilroy-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'gil';
+    src: url('../fonts/Gilroy-Bold.woff2') format('woff2');
+    font-weight: 700;
+}
+
+
+.blind{
+    overflow: hidden;
+    position: absolute;
+    margin: -1px;
+    height: 1px; width: 1px;
+    clip: rect(0 0 0 0);
+}
+
+body{
+    min-width: 320px;
+    color: #333;
+    background: #fff;
+    margin: 0 auto;
+    font-family: gil, noto, sans-serif;
+}

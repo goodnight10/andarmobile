@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./asset/css/layout.css">
+    <link rel="stylesheet" href="./asset/css/main.css">
+    <!-- 링크 걸땐 메인이 맨마지막으로 -->
+
+    <script src="./asset/js/jquery-1.12.4.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- defer 걸어주면 function없어도 괜찮음 -->
+    <script defer src="./asset/js/custom.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="dimmed"></div>
+        <div class="swiper top-slide">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="" class="link-banner">
+                        <span><em>[공식몰 단독]</em>카톡채널 추가하고<em>3,000원 할인받기</em><img src="./asset/images/kakao.png" alt="" class="kakao"></span>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="" class="link-banner">
+                        <span><em>[애슬레저 품질대상1위]</em>에어쿨링 레깅스 1&1 바로가기</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 로고부분 -->
+        <div class="header-inner">
+
+            <div class="logo-area">
+                <h1 class="logo"><a href=""><span class="blind">안다르</span></a></h1>
+                <div class="left">
+                    <a href="" class="btn btn-menu"><span class="blind">메뉴</span></a>
+                    <a href="" class="btn btn-search"><span class="blind">검색</span></a>
+                </div>
+                <div class="right">
+                    <a href="" class="btn btn-cart"><span class="blind">장바구니</span><span class="badge-count">0</span></a>
+                    <a href="" class="btn btn-mypage"><span class="blind">마이페이지</span></a>
+                </div>
+            </div>
+            <div class="menu-area">
+                <nav class="menu-wrap">
+                    <ul class="menu-list">
+                        <li class="menu-item"><a href="" class="link-menu"><span class="event">베스트</span></a></li>
+                        <li class="menu-item"><a href="" class="link-menu"><span class="event">신상</span></a></li>
+                        <li class="menu-item"><a href="" class="link-menu">우먼즈</a></li>
+                        <li class="menu-item"><a href="" class="link-menu">맨즈</a></li>
+                        <li class="menu-item"><a href="" class="link-menu">아울렛</a></li>
+                        <li class="menu-item"><a href="" class="link-menu"><span class="event">베스트</span></a></li>
+                        <li class="menu-item"><a href="" class="link-menu"><span class="event">신상</span></a></li>
+                        <li class="menu-item"><a href="" class="link-menu">우먼즈</a></li>
+                        <li class="menu-item"><a href="" class="link-menu">맨즈</a></li>
+                        <li class="menu-item"><a href="" class="link-menu">아울렛</a></li>
+                        <li class="menu-item"><a href="" class="link-menu"><span class="event">베스트</span></a></li>
+                        <li class="menu-item"><a href="" class="link-menu"><span class="event">신상</span></a></li>
+                        <li class="menu-item"><a href="" class="link-menu">우먼즈</a></li>
+                        <li class="menu-item"><a href="" class="link-menu">맨즈</a></li>
+                        <li class="menu-item"><a href="" class="link-menu">아울렛</a></li>
+                    </ul>
+                    <p class="all-menu no">전체메뉴</p>
+                </nav>
+                <a href="#" class="link-more"><span class="blind">더보기</span></a>
+            </div>
+            <div class="submenu-area no">
+                <div class="all-submenu-wrap">
+                    <a href="" class="link-submenu"><span>베스트</span></a>
+                    <a href="" class="link-submenu"><span>신상</span></a>
+                    <a href="" class="link-submenu">우먼즈</a>
+                    <a href="" class="link-submenu">맨즈</a>
+                    <a href="" class="link-submenu">아울렛</a>
+                    <a href="" class="link-submenu">홈트용품&액세서리</a>
+                    <a href="" class="link-submenu">서스테이너블</a>
+                    <a href="" class="link-submenu">기프트샵</a>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- 메뉴라고 해서 다 nav는 아니고 메뉴목록만. nav=메뉴를 묶을 때 시용 -->
+        <div class="gnb-area">
+                <div class="login-wrap">
+                    <div class="top">
+                        <div class="btn-box">
+                            <a href="" class="link-login">로그인</a>
+                            <a href="" class="link-join">회원가입</a>
+                        </div>
+                        <a href="" class="btn-close"><span class="blind">닫기</span></a>
+                    </div>
+                    <div class="bottom">
+                        <span>로그인 하고, <em>회원 전용 혜택</em> 확인하기</span>
+                    </div>
+                </div>
+                <nav>
+                    <div class="category-wrap">
+                        <ul class="category-list">
+                            <li class="category-item">
+                                <a href="#" class="btn-category"><span>베스트</span></a>
+                                <ul class="sub-list">
+                                    <li class="sub-item"><a href="" class="link-sub">전체</a></li>
+                                    <li class="sub-item"><a href="" class="link-sub">우먼즈</a></li>
+                                    <li class="sub-item"><a href="" class="link-sub">맨즈</a></li>
+                                    <li class="sub-item"><a href="" class="link-sub">홈트용품 & 액세서리</a></li>
+                                </ul>
+                            </li>
+                            <li class="category-item">
+                                <a href="#" class="btn-category"><span>신상</span></a>
+                                <ul class="sub-list">
+                                    <li class="sub-item"><a href="" class="link-sub">전체</a></li>
+                                    <li class="sub-item"><a href="" class="link-sub">우먼즈</a></li>
+                                    <li class="sub-item"><a href="" class="link-sub">맨즈</a></li>
+                                    <li class="sub-item"><a href="" class="link-sub">홈트용품 & 액세서리</a></li>
+                                </ul>
+                            </li>
+                            <li class="category-item">
+                                <a href="#" class="btn-category">우먼즈</a>
+                                <ul class="sub-list">
+                                    <li class="sub-item"><a href="" class="link-sub">전체</a></li>
+                                    <li class="sub-item"><a href="" class="link-sub">우먼즈</a></li>
+                                    <li class="sub-item"><a href="" class="link-sub">맨즈</a></li>
+                                    <li class="sub-item"><a href="" class="link-sub">홈트용품 & 액세서리</a></li>
+                                </ul>
+                            </li>
+                            <li class="category-item">
+                                <a href="#" class="btn-category">맨즈</a>
+                                <ul class="sub-list">
+                                    <li class="sub-item"><a href="" class="link-sub">전체</a></li>
+                                    <li class="sub-item"><a href="" class="link-sub">우먼즈</a></li>
+                                    <li class="sub-item"><a href="" class="link-sub">맨즈</a></li>
+                                    <li class="sub-item"><a href="" class="link-sub">홈트용품 & 액세서리</a></li>
+                                </ul>
+                            </li>
+                            <li class="category-item">
+                                <a href="#" class="btn-category">홈트용품 & 액세서리</a>
+                                <ul class="sub-list">
+                                    <li class="sub-item"><a href="" class="link-sub">전체</a></li>
+                                    <li class="sub-item"><a href="" class="link-sub">우먼즈</a></li>
+                                    <li class="sub-item"><a href="" class="link-sub">맨즈</a></li>
+                                    <li class="sub-item"><a href="" class="link-sub">홈트용품 & 액세서리</a></li>
+                                </ul>
+                            </li>
+                            <li class="category-item">
+                                <a href="#" class="btn-category">서스테이너블</a>
+                                <ul class="sub-list">
+                                    <li class="sub-item"><a href="" class="link-sub">전체</a></li>
+                                    <li class="sub-item"><a href="" class="link-sub">우먼즈</a></li>
+                                    <li class="sub-item"><a href="" class="link-sub">맨즈</a></li>
+                                    <li class="sub-item"><a href="" class="link-sub">홈트용품 & 액세서리</a></li>
+                                </ul>
+                            </li>
+                            <li class="category-item">
+                                <a href="#" class="btn-category">아울렛</a>
+                                <ul class="sub-list">
+                                    <li class="sub-item"><a href="" class="link-sub">전체</a></li>
+                                    <li class="sub-item"><a href="" class="link-sub">우먼즈</a></li>
+                                    <li class="sub-item"><a href="" class="link-sub">맨즈</a></li>
+                                    <li class="sub-item"><a href="" class="link-sub">홈트용품 & 액세서리</a></li>
+                                </ul>
+                            </li>
+                            <li class="category-item">
+                                <a href="#" class="btn-category">기프트샵</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="category-wrap">
+                        <ul class="category-list">
+                            <li class="category-item">
+                                <a href="" class="btn-category">EVENT</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="" class="btn-category">안다르 매거진</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="" class="btn-category">고객지원</a>
+                                <a href="" class="btn-drop"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="event-wrap">
+                    <p class="title">이벤트</p>
+                    <a href="" class="link-event">
+                        <img src="./asset/images/event-img.jpg" alt="">
+                        <p class="subtitle">압도적인 품질로 사랑받는 에어쿨링<span class="all">전체 →</span></p>
+                        <span class="desc">뛰어난 신축성과 편안한 착용감</span>
+                    </a>
+                </div>
+                <div class="brand-wrap">
+                    <div class="brand-box">
+                        <a href="" class="link-brand">브랜드스토리</a>
+                        <a href="" class="link-brand">전국매장안내</a>
+                    </div>
+                </div>
+            
+                
+        
+        </div>
+        
+    </header>
+
+    <main class="container">
+        <section class="sc-slide">
+            <h2 class="blind">슬라이드</h2>
+            <div class="swiper main-slide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <figure>
+                            <a href="">
+                                <img src="./asset/images/slide1.jpg" alt="반바지를 입은듯 시원한 출근용 슬랙스">
+                                <figcaption>
+                                    <h3>반바지를 입은듯 시원한<br>출근용 슬랙스</h3>
+                                    <span>포멀하게, 하지만 편안하게<br>비즈니스룩을 즐겨보세요</span>
+                                </figcaption>
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure>
+                            <a href="">
+                                <img src="./asset/images/slide2.jpg" alt="반바지를 입은듯 시원한 출근용 슬랙스">
+                                <figcaption>
+                                    <h3>포멀하게, 하지만 편안하게<br>비즈니스룩을 즐겨보세요</h3>
+                                    <span>반바지를 입은듯 시원한<br>출근용 슬랙스</span>
+                                </figcaption>
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure>
+                            <a href="">
+                                <img src="./asset/images/slide3.jpg" alt="반바지를 입은듯 시원한 출근용 슬랙스">
+                                <figcaption>
+                                    <h3>반바지를 입은듯 시원한<br>출근용 슬랙스</h3>
+                                    <span>포멀하게, 하지만 편안하게<br>비즈니스룩을 즐겨보세요</span>
+                                </figcaption>
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure>
+                            <a href="">
+                                <img src="./asset/images/slide4.jpg" alt="반바지를 입은듯 시원한 출근용 슬랙스">
+                                <figcaption>
+                                    <h3>포멀하게, 하지만 편안하게<br>비즈니스룩을 즐겨보세요</h3>
+                                    <span>반바지를 입은듯 시원한<br>출근용 슬랙스</span>
+                                </figcaption>
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure>
+                            <a href="">
+                                <img src="./asset/images/slide5.jpg" alt="반바지를 입은듯 시원한 출근용 슬랙스">
+                                <figcaption>
+                                    <h3>반바지를 입은듯 시원한<br>출근용 슬랙스</h3>
+                                    <span>포멀하게, 하지만 편안하게<br>비즈니스룩을 즐겨보세요</span>
+                                </figcaption>
+                            </a>
+                        </figure>
+                    </div>
+                
+                </div>
+
+
+                <div class="swiper-pagination">
+                    <!-- 클래스명 못바꾸나? -->
+                    <span class="swiper-pagination-bullet swiper-pagination-bullet-active">1</span>
+                    <span class="swiper-pagination-bullet">2</span>
+                    <span class="swiper-pagination-bullet">3</span>
+                    <span class="swiper-pagination-bullet">4</span>
+                    <span class="swiper-pagination-bullet">5</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="sc-best">
+            <h2 class="sc-title">BEST</h2>
+            <ul class="product-list list-row">
+                <li class="product-item">
+                    <a href="" class="link-prd"><img src="./asset/images/3set.jpg" alt="3세트 숏슬리브" class="pro-img"></a>
+                    <div class="desc-box">
+                        <em class="review">리뷰 1,964</em>
+                        <a href="" class="prd-title">[3 SET] NEW 에어리핏 오버핏 숏슬리브</a>
+                        <!-- 연관 있는 것끼리는 묶어주는 게 좋음. -->
+                        <div class="prc-box">
+                            <em class="prc-dis">32%</em>
+                            <em class="prc-curr">59,000원</em>
+                            <span class="prc-org">87,000원</span>
+                        </div>
+                        <div class="opt-box">
+                            <span class="color"><span>12</span> 컬러</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="product-item">
+                    <a href="" class="link-prd"><img src="./asset/images/3set.jpg" alt="3세트 숏슬리브" class="pro-img"></a>
+                    <div class="desc-box">
+                        <em class="review">리뷰 1,964</em>
+                        <a href="" class="prd-title">[3 SET] NEW 에어리핏 오버핏 숏슬리브</a>
+                        <!-- 연관 있는 것끼리는 묶어주는 게 좋음. -->
+                        <div class="prc-box">
+                            <em class="prc-dis">32%</em>
+                            <em class="prc-curr">59,000원</em>
+                            <span class="prc-org">87,000원</span>
+                        </div>
+                        <div class="opt-box">
+                            <span class="color"><span>12</span> 컬러</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="product-item">
+                    <a href="" class="link-prd"><img src="./asset/images/3set.jpg" alt="3세트 숏슬리브" class="pro-img"></a>
+                    <div class="desc-box">
+                        <em class="review">리뷰 1,964</em>
+                        <a href="" class="prd-title">[3 SET] NEW 에어리핏 오버핏 숏슬리브</a>
+                        <!-- 연관 있는 것끼리는 묶어주는 게 좋음. -->
+                        <div class="prc-box">
+                            <em class="prc-dis">32%</em>
+                            <em class="prc-curr">59,000원</em>
+                            <span class="prc-org">87,000원</span>
+                        </div>
+                        <div class="opt-box">
+                            <span class="color"><span>12</span> 컬러</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="product-item">
+                    <a href="" class="link-prd"><img src="./asset/images/3set.jpg" alt="3세트 숏슬리브" class="pro-img"></a>
+                    <div class="desc-box">
+                        <em class="review">리뷰 1,964</em>
+                        <a href="" class="prd-title">[3 SET] NEW 에어리핏 오버핏 숏슬리브</a>
+                        <!-- 연관 있는 것끼리는 묶어주는 게 좋음. -->
+                        <div class="prc-box">
+                            <em class="prc-dis">32%</em>
+                            <em class="prc-curr">59,000원</em>
+                            <span class="prc-org">87,000원</span>
+                        </div>
+                        <div class="opt-box">
+                            <span class="color"><span>12</span> 컬러</span>
+                        </div>
+                    </div>
+                </li>
+               
+            </ul>
+            <a href="" class="link-more">BEST 더보기</a>
+        </section>
+
+        <!-- 독립적 섹션으로 주기 좀 작은 경우에 section말고 article -->
+        <article class="sc-coupon">
+            <div class="coupon-area">
+                <a href="" class="link-coupon"><img src="./asset/images/coupon.jpg" alt="안다르가 처음이라면? 3천원 할인쿠폰 받기"></a>
+            </div>
+        </article>
+
+        <section class="sc-sell">
+            <h2 class="blind">룩북</h2>
+            <div class="sell-area">
+                <div class="sell-wrap">
+                    <a href="" class="link-sell">
+                        <img src="./asset/images/01.jpg" alt="">
+                        <div class="desc">
+                            <h3>애슬레저 품질대상 1위<br>압도적인 차이, 안다르</h3>
+                            <span>안다르 애슬레저 이노베이션 랩만의<br>차별화된 원단 기술과 디자인을 만나보세요.</span>
+                        </div>
+                    </a>
+                    <a href="" class="link-more">보러가기</a>
+                </div>
+                
+                <ul class="product-list list-col">
+                    <li class="product-item">
+                        <a href="" class="link-prd"><img src="./asset/images/3set.jpg" alt="3세트 숏슬리브" class="pro-img"></a>
+                        <div class="desc-box">
+                            <em class="review">리뷰 1,964</em>
+                            <a href="" class="prd-title">[3 SET] NEW 에어리핏 오버핏 숏슬리브</a>
+                            <!-- 연관 있는 것끼리는 묶어주는 게 좋음. -->
+                            <div class="prc-box">
+                                <em class="prc-dis">32%</em>
+                                <em class="prc-curr">59,000원</em>
+                                <span class="prc-org">87,000원</span>
+                            </div>
+                            <div class="opt-box">
+                                <span class="color"><span>12</span> 컬러</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-item">
+                        <a href="" class="link-prd"><img src="./asset/images/3set.jpg" alt="3세트 숏슬리브" class="pro-img"></a>
+                        <div class="desc-box">
+                            <em class="review">리뷰 1,964</em>
+                            <a href="" class="prd-title">[3 SET] NEW 에어리핏 오버핏 숏슬리브</a>
+                            <!-- 연관 있는 것끼리는 묶어주는 게 좋음. -->
+                            <div class="prc-box">
+                                <em class="prc-dis">32%</em>
+                                <em class="prc-curr">59,000원</em>
+                                <span class="prc-org">87,000원</span>
+                            </div>
+                            <div class="opt-box">
+                                <span class="color"><span>12</span> 컬러</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                   
+                </ul>
+            </div>
+
+
+            <div class="sell-area">
+                <div class="sell-wrap">
+                    <a href="" class="link-sell">
+                        <img src="./asset/images/02.jpg" alt="">
+                        <div class="desc">
+                            <h3>한여름까지 쾌적하게<br>땀자국 걱정없는 티셔츠</h3>
+                            <span>소재, 색감 핏까지 내 마음에 쏙.<br>베스트셀러를 운동&일상에서 즐겨요.</span>
+                        </div>
+                    </a>
+                    <a href="" class="link-more">보러가기</a>
+                </div>
+                
+                <ul class="product-list list-col">
+                    <li class="product-item">
+                        <a href="" class="link-prd"><img src="./asset/images/3set.jpg" alt="3세트 숏슬리브" class="pro-img"></a>
+                        <div class="desc-box">
+                            <em class="review">리뷰 1,964</em>
+                            <a href="" class="prd-title">[3 SET] NEW 에어리핏 오버핏 숏슬리브</a>
+                            <!-- 연관 있는 것끼리는 묶어주는 게 좋음. -->
+                            <div class="prc-box">
+                                <em class="prc-dis">32%</em>
+                                <em class="prc-curr">59,000원</em>
+                                <span class="prc-org">87,000원</span>
+                            </div>
+                            <div class="opt-box">
+                                <span class="color"><span>12</span> 컬러</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-item">
+                        <a href="" class="link-prd"><img src="./asset/images/3set.jpg" alt="3세트 숏슬리브" class="pro-img"></a>
+                        <div class="desc-box">
+                            <em class="review">리뷰 1,964</em>
+                            <a href="" class="prd-title">[3 SET] NEW 에어리핏 오버핏 숏슬리브</a>
+                            <!-- 연관 있는 것끼리는 묶어주는 게 좋음. -->
+                            <div class="prc-box">
+                                <em class="prc-dis">32%</em>
+                                <em class="prc-curr">59,000원</em>
+                                <span class="prc-org">87,000원</span>
+                            </div>
+                            <div class="opt-box">
+                                <span class="color"><span>12</span> 컬러</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                   
+                </ul>
+            </div>        
+        </section>
+
+        <section class="sc-new">
+            <h2 class="sc-title">이달의 신상</h2>
+            <ul class="product-list list-row">
+                <li class="product-item">
+                    <a href="" class="link-prd"><img src="./asset/images/3set.jpg" alt="3세트 숏슬리브" class="pro-img"></a>
+                    <div class="desc-box">
+                        <em class="review">리뷰 1,964</em>
+                        <a href="" class="prd-title">[3 SET] NEW 에어리핏 오버핏 숏슬리브</a>
+                        <!-- 연관 있는 것끼리는 묶어주는 게 좋음. -->
+                        <div class="prc-box">
+                            <em class="prc-dis">32%</em>
+                            <em class="prc-curr">59,000원</em>
+                            <span class="prc-org">87,000원</span>
+                        </div>
+                        <div class="opt-box">
+                            <span class="color"><span>12</span> 컬러</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="product-item">
+                    <a href="" class="link-prd"><img src="./asset/images/3set.jpg" alt="3세트 숏슬리브" class="pro-img"></a>
+                    <div class="desc-box">
+                        <em class="review">리뷰 1,964</em>
+                        <a href="" class="prd-title">[3 SET] NEW 에어리핏 오버핏 숏슬리브</a>
+                        <!-- 연관 있는 것끼리는 묶어주는 게 좋음. -->
+                        <div class="prc-box">
+                            <em class="prc-dis">32%</em>
+                            <em class="prc-curr">59,000원</em>
+                            <span class="prc-org">87,000원</span>
+                        </div>
+                        <div class="opt-box">
+                            <span class="color"><span>12</span> 컬러</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="product-item">
+                    <a href="" class="link-prd"><img src="./asset/images/3set.jpg" alt="3세트 숏슬리브" class="pro-img"></a>
+                    <div class="desc-box">
+                        <em class="review">리뷰 1,964</em>
+                        <a href="" class="prd-title">[3 SET] NEW 에어리핏 오버핏 숏슬리브</a>
+                        <!-- 연관 있는 것끼리는 묶어주는 게 좋음. -->
+                        <div class="prc-box">
+                            <em class="prc-dis">32%</em>
+                            <em class="prc-curr">59,000원</em>
+                            <span class="prc-org">87,000원</span>
+                        </div>
+                        <div class="opt-box">
+                            <span class="color"><span>12</span> 컬러</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="product-item">
+                    <a href="" class="link-prd"><img src="./asset/images/3set.jpg" alt="3세트 숏슬리브" class="pro-img"></a>
+                    <div class="desc-box">
+                        <em class="review">리뷰 1,964</em>
+                        <a href="" class="prd-title">[3 SET] NEW 에어리핏 오버핏 숏슬리브</a>
+                        <!-- 연관 있는 것끼리는 묶어주는 게 좋음. -->
+                        <div class="prc-box">
+                            <em class="prc-dis">32%</em>
+                            <em class="prc-curr">59,000원</em>
+                            <span class="prc-org">87,000원</span>
+                        </div>
+                        <div class="opt-box">
+                            <span class="color"><span>12</span> 컬러</span>
+                        </div>
+                    </div>
+                </li>
+               
+            </ul>
+            <a href="" class="link-more">신상 더보기</a>
+        </section>
+
+        <section class="sc-brandstory">
+            <a href="" class="link-brandstory">
+                <!-- <div class="brandstory-wrap"> 굳이 필요없음-->
+                    <h2 class="title">K애슬레저 리딩 안다르, 브랜드 스토리</h2>
+                    <strong class="desc">Stretch your<br>story with andar</strong>
+                    <!--  혹은 h3로 해도됨 -->
+                    <p class="winner">*한국소비자포럼/올해의 브랜드 대상/애슬레저 부문/2019-2021</p>
+                    <span class="more">자세히 보기</span>                   
+                <!-- </div> -->
+            </a>
+        </section>
+
+        <section class="sc-product">
+            <h2 class="blind">상품소개</h2>
+            <div class="prd-wrap leggings">
+                <h3 class="sc-title">레깅스</h3>
+                <div class="swiper product-slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="" class="link-product"><img src="./asset/images/3set.jpg" alt="3세트 숏슬리브" class="pro-img"><img src="./asset/images/new.png" alt="" class="badge-new"></a>
+                            <div class="product-box">
+                                <span class="review">리뷰 1,964</span>
+                                <a href="" class="pro-title">[3 SET] NEW 에어리핏 오버핏 숏슬리브 NEW 에어리핏 오버핏 숏슬리브</a>
+                                <p class="price"><em class="discount">32%</em>59,000원<del>87,000원</del></p>
+                                <span class="color"><span>12</span> 컬러</span>
+                                <span class="prize">애슬레저 품질대상 1위</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="link-product"><img src="./asset/images/11.jpg" alt="3세트 숏슬리브" class="pro-img"><img src="./asset/images/new.png" alt="" class="badge-new"></a>
+                            <div class="product-box">
+                                <span class="review">리뷰 1,964</span>
+                                <a href="" class="pro-title">[3 SET] NEW 에어리핏 오버핏 숏슬리브</a>
+                                <p class="price"><em class="discount">32%</em>59,000원<del>87,000원</del></p>
+                                <span class="color"><span>12</span> 컬러</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="link-product"><img src="./asset/images/3set.jpg" alt="3세트 숏슬리브" class="pro-img"><img src="./asset/images/new.png" alt="" class="badge-new"></a>
+                            <div class="product-box">
+                                <span class="review">리뷰 1,964</span>
+                                <a href="" class="pro-title">[3 SET] NEW 에어리핏 오버핏 숏슬리브</a>
+                                <p class="price"><em class="discount">32%</em>59,000원<del>87,000원</del></p>
+                                <span class="color"><span>12</span> 컬러</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="link-product"><img src="./asset/images/11.jpg" alt="3세트 숏슬리브" class="pro-img"><img src="./asset/images/new.png" alt="" class="badge-new"></a>
+                            <div class="product-box">
+                                <span class="review">리뷰 1,964</span>
+                                <a href="" class="pro-title">[3 SET] NEW 에어리핏 오버핏 숏슬리브</a>
+                                <p class="price"><em class="discount">32%</em>59,000원<del>87,000원</del></p>
+                                <span class="color"><span>12</span> 컬러</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="link-product"><img src="./asset/images/3set.jpg" alt="3세트 숏슬리브" class="pro-img"><img src="./asset/images/new.png" alt="" class="badge-new"></a>
+                            <div class="product-box">
+                                <span class="review">리뷰 1,964</span>
+                                <a href="" class="pro-title">[3 SET] NEW 에어리핏 오버핏 숏슬리브</a>
+                                <p class="price"><em class="discount">32%</em>59,000원<del>87,000원</del></p>
+                                <span class="color"><span>12</span> 컬러</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="link-product"><img src="./asset/images/11.jpg" alt="3세트 숏슬리브" class="pro-img"><img src="./asset/images/new.png" alt="" class="badge-new"></a>
+                            <div class="product-box">
+                                <span class="review">리뷰 1,964</span>
+                                <a href="" class="pro-title">[3 SET] NEW 에어리핏 오버핏 숏슬리브</a>
+                                <p class="price"><em class="discount">32%</em>59,000원<del>87,000원</del></p>
+                                <span class="color"><span>12</span> 컬러</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="link-product"><img src="./asset/images/3set.jpg" alt="3세트 숏슬리브" class="pro-img"><img src="./asset/images/new.png" alt="" class="badge-new"></a>
+                            <div class="product-box">
+                                <span class="review">리뷰 1,964</span>
+                                <a href="" class="pro-title">[3 SET] NEW 에어리핏 오버핏 숏슬리브</a>
+                                <p class="price"><em class="discount">32%</em>59,000원<del>87,000원</del></p>
+                                <span class="color"><span>12</span> 컬러</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="link-product"><img src="./asset/images/3set.jpg" alt="3세트 숏슬리브" class="pro-img"><img src="./asset/images/new.png" alt="" class="badge-new"></a>
+                            <div class="product-box">
+                                <span class="review">리뷰 1,964</span>
+                                <a href="" class="pro-title">[3 SET] NEW 에어리핏 오버핏 숏슬리브</a>
+                                <p class="price"><em class="discount">32%</em>59,000원<del>87,000원</del></p>
+                                <span class="color"><span>12</span> 컬러</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="link-product"><img src="./asset/images/3set.jpg" alt="3세트 숏슬리브" class="pro-img"><img src="./asset/images/new.png" alt="" class="badge-new"></a>
+                            <div class="product-box">
+                                <span class="review">리뷰 1,964</span>
+                                <a href="" class="pro-title">[3 SET] NEW 에어리핏 오버핏 숏슬리브</a>
+                                <p class="price"><em class="discount">32%</em>59,000원<del>87,000원</del></p>
+                                <span class="color"><span>12</span> 컬러</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="link-product"><img src="./asset/images/3set.jpg" alt="3세트 숏슬리브" class="pro-img"><img src="./asset/images/new.png" alt="" class="badge-new"></a>
+                            <div class="product-box">
+                                <span class="review">리뷰 1,964</span>
+                                <a href="" class="pro-title">[3 SET] NEW 에어리핏 오버핏 숏슬리브</a>
+                                <p class="price"><em class="discount">32%</em>59,000원<del>87,000원</del></p>
+                                <span class="color"><span>12</span> 컬러</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="link-more">더보기</a>
+            </div>
+            <div class="prd-wrap bratop">
+                <h3 class="sc-title">브라탑</h3>
+                <div class="swiper product-slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="" class="link-product"><img src="./asset/images/3set.jpg" alt="3세트 숏슬리브" class="pro-img"><img src="./asset/images/new.png" alt="" class="badge-new"></a>
+                            <div class="product-box">
+                                <span class="review">리뷰 1,964</span>
+                                <a href="" class="pro-title">[3 SET] NEW 에어리핏 오버핏 숏슬리브</a>
+                                <p class="price"><em class="discount">32%</em>59,000원<del>87,000원</del></p>
+                                <span class="color"><span>12</span> 컬러</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="link-product"><img src="./asset/images/3set.jpg" alt="3세트 숏슬리브" class="pro-img"><img src="./asset/images/new.png" alt="" class="badge-new"></a>
+                            <div class="product-box">
+                                <span class="review">리뷰 1,964</span>
+                                <a href="" class="pro-title">[3 SET] NEW 에어리핏 오버핏 숏슬리브</a>
+                                <p class="price"><em class="discount">32%</em>59,000원<del>87,000원</del></p>
+                                <span class="color"><span>12</span> 컬러</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="link-product"><img src="./asset/images/3set.jpg" alt="3세트 숏슬리브" class="pro-img"><img src="./asset/images/new.png" alt="" class="badge-new"></a>
+                            <div class="product-box">
+                                <span class="review">리뷰 1,964</span>
+                                <a href="" class="pro-title">[3 SET] NEW 에어리핏 오버핏 숏슬리브</a>
+                                <p class="price"><em class="discount">32%</em>59,000원<del>87,000원</del></p>
+                                <span class="color"><span>12</span> 컬러</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="link-product"><img src="./asset/images/3set.jpg" alt="3세트 숏슬리브" class="pro-img"><img src="./asset/images/new.png" alt="" class="badge-new"></a>
+                            <div class="product-box">
+                                <span class="review">리뷰 1,964</span>
+                                <a href="" class="pro-title">[3 SET] NEW 에어리핏 오버핏 숏슬리브</a>
+                                <p class="price"><em class="discount">32%</em>59,000원<del>87,000원</del></p>
+                                <span class="color"><span>12</span> 컬러</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="link-product"><img src="./asset/images/3set.jpg" alt="3세트 숏슬리브" class="pro-img"><img src="./asset/images/new.png" alt="" class="badge-new"></a>
+                            <div class="product-box">
+                                <span class="review">리뷰 1,964</span>
+                                <a href="" class="pro-title">[3 SET] NEW 에어리핏 오버핏 숏슬리브</a>
+                                <p class="price"><em class="discount">32%</em>59,000원<del>87,000원</del></p>
+                                <span class="color"><span>12</span> 컬러</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="link-product"><img src="./asset/images/3set.jpg" alt="3세트 숏슬리브" class="pro-img"><img src="./asset/images/new.png" alt="" class="badge-new"></a>
+                            <div class="product-box">
+                                <span class="review">리뷰 1,964</span>
+                                <a href="" class="pro-title">[3 SET] NEW 에어리핏 오버핏 숏슬리브</a>
+                                <p class="price"><em class="discount">32%</em>59,000원<del>87,000원</del></p>
+                                <span class="color"><span>12</span> 컬러</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="link-product"><img src="./asset/images/3set.jpg" alt="3세트 숏슬리브" class="pro-img"><img src="./asset/images/new.png" alt="" class="badge-new"></a>
+                            <div class="product-box">
+                                <span class="review">리뷰 1,964</span>
+                                <a href="" class="pro-title">[3 SET] NEW 에어리핏 오버핏 숏슬리브</a>
+                                <p class="price"><em class="discount">32%</em>59,000원<del>87,000원</del></p>
+                                <span class="color"><span>12</span> 컬러</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="link-product"><img src="./asset/images/3set.jpg" alt="3세트 숏슬리브" class="pro-img"><img src="./asset/images/new.png" alt="" class="badge-new"></a>
+                            <div class="product-box">
+                                <span class="review">리뷰 1,964</span>
+                                <a href="" class="pro-title">[3 SET] NEW 에어리핏 오버핏 숏슬리브</a>
+                                <p class="price"><em class="discount">32%</em>59,000원<del>87,000원</del></p>
+                                <span class="color"><span>12</span> 컬러</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="link-product"><img src="./asset/images/3set.jpg" alt="3세트 숏슬리브" class="pro-img"><img src="./asset/images/new.png" alt="" class="badge-new"></a>
+                            <div class="product-box">
+                                <span class="review">리뷰 1,964</span>
+                                <a href="" class="pro-title">[3 SET] NEW 에어리핏 오버핏 숏슬리브</a>
+                                <p class="price"><em class="discount">32%</em>59,000원<del>87,000원</del></p>
+                                <span class="color"><span>12</span> 컬러</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="link-product"><img src="./asset/images/3set.jpg" alt="3세트 숏슬리브" class="pro-img"><img src="./asset/images/new.png" alt="" class="badge-new"></a>
+                            <div class="product-box">
+                                <span class="review">리뷰 1,964</span>
+                                <a href="" class="pro-title">[3 SET] NEW 에어리핏 오버핏 숏슬리브</a>
+                                <p class="price"><em class="discount">32%</em>59,000원<del>87,000원</del></p>
+                                <span class="color"><span>12</span> 컬러</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="link-more">더보기</a>
+            </div>
+            <div class="prd-wrap set">
+                <h3 class="sc-title">세트</h3>
+                <div class="swiper product-slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="" class="link-product"><img src="./asset/images/3set.jpg" alt="3세트 숏슬리브" class="pro-img"><img src="./asset/images/new.png" alt="" class="badge-new"></a>
+                            <div class="product-box">
+                                <span class="review">리뷰 1,964</span>
+                                <a href="" class="pro-title">[3 SET] NEW 에어리핏 오버핏 숏슬리브</a>
+                                <p class="price"><em class="discount">32%</em>59,000원<del>87,000원</del></p>
+                                <span class="color"><span>12</span> 컬러</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="link-product"><img src="./asset/images/3set.jpg" alt="3세트 숏슬리브" class="pro-img"><img src="./asset/images/new.png" alt="" class="badge-new"></a>
+                            <div class="product-box">
+                                <span class="review">리뷰 1,964</span>
+                                <a href="" class="pro-title">[3 SET] NEW 에어리핏 오버핏 숏슬리브</a>
+                                <p class="price"><em class="discount">32%</em>59,000원<del>87,000원</del></p>
+                                <span class="color"><span>12</span> 컬러</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="link-product"><img src="./asset/images/3set.jpg" alt="3세트 숏슬리브" class="pro-img"><img src="./asset/images/new.png" alt="" class="badge-new"></a>
+                            <div class="product-box">
+                                <span class="review">리뷰 1,964</span>
+                                <a href="" class="pro-title">[3 SET] NEW 에어리핏 오버핏 숏슬리브</a>
+                                <p class="price"><em class="discount">32%</em>59,000원<del>87,000원</del></p>
+                                <span class="color"><span>12</span> 컬러</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="link-product"><img src="./asset/images/3set.jpg" alt="3세트 숏슬리브" class="pro-img"><img src="./asset/images/new.png" alt="" class="badge-new"></a>
+                            <div class="product-box">
+                                <span class="review">리뷰 1,964</span>
+                                <a href="" class="pro-title">[3 SET] NEW 에어리핏 오버핏 숏슬리브</a>
+                                <p class="price"><em class="discount">32%</em>59,000원<del>87,000원</del></p>
+                                <span class="color"><span>12</span> 컬러</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="link-product"><img src="./asset/images/3set.jpg" alt="3세트 숏슬리브" class="pro-img"><img src="./asset/images/new.png" alt="" class="badge-new"></a>
+                            <div class="product-box">
+                                <span class="review">리뷰 1,964</span>
+                                <a href="" class="pro-title">[3 SET] NEW 에어리핏 오버핏 숏슬리브</a>
+                                <p class="price"><em class="discount">32%</em>59,000원<del>87,000원</del></p>
+                                <span class="color"><span>12</span> 컬러</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="link-product"><img src="./asset/images/3set.jpg" alt="3세트 숏슬리브" class="pro-img"><img src="./asset/images/new.png" alt="" class="badge-new"></a>
+                            <div class="product-box">
+                                <span class="review">리뷰 1,964</span>
+                                <a href="" class="pro-title">[3 SET] NEW 에어리핏 오버핏 숏슬리브</a>
+                                <p class="price"><em class="discount">32%</em>59,000원<del>87,000원</del></p>
+                                <span class="color"><span>12</span> 컬러</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="link-product"><img src="./asset/images/3set.jpg" alt="3세트 숏슬리브" class="pro-img"><img src="./asset/images/new.png" alt="" class="badge-new"></a>
+                            <div class="product-box">
+                                <span class="review">리뷰 1,964</span>
+                                <a href="" class="pro-title">[3 SET] NEW 에어리핏 오버핏 숏슬리브</a>
+                                <p class="price"><em class="discount">32%</em>59,000원<del>87,000원</del></p>
+                                <span class="color"><span>12</span> 컬러</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="link-product"><img src="./asset/images/3set.jpg" alt="3세트 숏슬리브" class="pro-img"><img src="./asset/images/new.png" alt="" class="badge-new"></a>
+                            <div class="product-box">
+                                <span class="review">리뷰 1,964</span>
+                                <a href="" class="pro-title">[3 SET] NEW 에어리핏 오버핏 숏슬리브</a>
+                                <p class="price"><em class="discount">32%</em>59,000원<del>87,000원</del></p>
+                                <span class="color"><span>12</span> 컬러</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="link-product"><img src="./asset/images/3set.jpg" alt="3세트 숏슬리브" class="pro-img"><img src="./asset/images/new.png" alt="" class="badge-new"></a>
+                            <div class="product-box">
+                                <span class="review">리뷰 1,964</span>
+                                <a href="" class="pro-title">[3 SET] NEW 에어리핏 오버핏 숏슬리브</a>
+                                <p class="price"><em class="discount">32%</em>59,000원<del>87,000원</del></p>
+                                <span class="color"><span>12</span> 컬러</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="link-product"><img src="./asset/images/3set.jpg" alt="3세트 숏슬리브" class="pro-img"><img src="./asset/images/new.png" alt="" class="badge-new"></a>
+                            <div class="product-box">
+                                <span class="review">리뷰 1,964</span>
+                                <a href="" class="pro-title">[3 SET] NEW 에어리핏 오버핏 숏슬리브</a>
+                                <p class="price"><em class="discount">32%</em>59,000원<del>87,000원</del></p>
+                                <span class="color"><span>12</span> 컬러</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="link-more">더보기</a>
+            </div>
+        </section>
+
+        <div class="company-area">
+            <section class="sc-membership">
+                <a href="" class="link-wrap">
+                    <h2 class="title">안다르 멤버십</h2>
+                    <p class="desc">5000원 쿠폰 지급, 상시5% 할인<br>등급별 혜택을 놓치지마세요.</p>
+                    <span class="btn">자세히 보기</span>
+                </a>
+            </section>
+            <section class="sc-offstore">
+                <a href="" class="link-wrap">
+                    <h2 class="title">오프라인 매장 안내</h2>
+                    <p class="desc">신세계백화점, 롯데백화점,<br>더현대 서울, 현대백화점 등<br>전국 오프라인 매장에서 만나보세요!</p>
+                    <span class="btn">자세히 보기</span>
+                </a>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <!-- main, header, footer한테는 꾸밈요소 잘 안넣어주고 div로 한번 감싸줌 -->
+        <div class="inner">
+            <div class="cs-area">
+                <h3>고객센터</h3>
+                <p class="call">1566-7318</p>
+                <p class="business-our">평일 AM 09:00 ~ PM 05:30 / 주말, 공휴일 휴무</p>
+                <p class="business-our lunch">점심 PM 12:00 ~ PM 01:00</p>
+            </div>
+            <div class="sns-area">
+                <a href="" class="link-sns facebook"><span class="blind">페이스북</span></a>
+                <a href="" class="link-sns youtube"><span class="blind">유튜브</span></a>
+                <a href="" class="link-sns insta"><span class="blind">인스타그램</span></a>
+            </div>
+            <div class="user-menu">
+                <ul class="user-list">
+                    <li class="user-item"><a href="" class="link-user">이용약관</a></li>
+                    <li class="user-item"><a href="" class="link-user">개인정보처리방침</a></li>
+                    <li class="user-item"><a href="" class="link-user">쇼핑몰 이용안내</a></li>
+                    <li class="user-item"><a href="" class="link-user">강사회원 신청</a></li>
+                </ul>
+            </div>
+            <div class="company">
+                <address class="add-area">
+                    <p>주식회사 안다르<i class="bar"></i>대표이사 : 박효영<i class="bar"></i>사업자등록번호 : <a href="">103-88-00990</a></p>
+                    <p>통신판매업신고 : 2021-서울마포-3979<i class="bar"></i>WEBMASTER : 임원빈</p>
+                    <p>주소 : 03924 서울특별시 마포구 월드컵북로54길 25 (상암동) 11층(S-City)</p>
+                    <p>TEL : 1566-7318<i class="bar"></i>호스팅제공자 : 카페24(주)</p>
+                    <p>이용 문의 : <a href="mailto:help@andar.co.kr">help@andar.co.kr</a></p>
+                    <p>마케팅제휴 문의 : <a href="mailto:partnership@andar.co.kr">partnership@andar.co.kr</a></p>
+                    <p>해외수출 문의 : <a href="mailto:overseas@andar.co.kr">overseas@andar.co.kr</a></p>
+                </address>
+                </div>
+            </div>
+            <div class="copy">
+                <p>Copyright by <span>안다르</span>. all rights reserved.</p>
+            </div>
+            <div class="mark">
+                <a href="" class="fare"><img src="./asset/images/fare.png" alt="공정거래위원회" class=""></a>
+                <a href="" class="symantec"><img src="./asset/images/symantec.png" alt="시만텍" class=""></a>
+                <a href="" class="kg"><img src="./asset/images/kg.png" alt="KG" class=""></a>
+            </div>
+            <div class="fixed-area">
+                <div class="top"><a href="" class="advice"></a><span>톡상담</span></div>
+                <div class="bottom"><a href="" class="upper"><span class="blind">위로가기</span></a></div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
