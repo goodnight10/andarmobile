@@ -82,7 +82,7 @@
     background: url(../images/logo-w.png) no-repeat;
     background-size: 100%;
 }
-.header .logo-area .link-logo{
+.header .logo-area .logo a{
     width: 100%;
     display: block;
 }
