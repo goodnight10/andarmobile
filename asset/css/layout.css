@@ -258,8 +258,14 @@ img{
     right: -7px;
 }
 
+.header .submenu-area.fixed{
+    visibility:visible;
+    opacity: 1;
+}
 .header .submenu-area{
     display: none;
+    visibility:hidden;
+    opacity: 0;
 }
 .header .submenu-area .all-submenu-wrap{
     display: flex;

@@ -13,10 +13,10 @@ $(function(){
     const curr=$(window).scrollTop();
     if (curr>0) {
       $('.header-inner').addClass('fixed')
-      // $('.submenu-area').css('visibility', 'visible');
+      $('.submenu-area').addClass('fixed')
     } else {
       $('.header-inner').removeClass('fixed')
-      // $('.submenu-area').css('visibility', 'hidden');
+      $('.submenu-area').removeClass('fixed')
     }
     
   })
