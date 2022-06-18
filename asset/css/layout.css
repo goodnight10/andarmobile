@@ -201,6 +201,13 @@ img{
     /* x축만 스크롤시켜줌 */
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
+    visibility: hidden;
+    opacity: 0;
+}
+.header .menu-area .menu-list.active{
+    
+    visibility: visible;
+    opacity: 1;
 }
 .header .menu-area .menu-list::-webkit-scrollbar{
     display: none; /* Chrome, Safari, Opera*/
@@ -219,8 +226,20 @@ img{
     font-weight: 400;
     position: relative;
 }
-.header .menu-area .all-menu.no{
+.header .menu-area .all-menu{
+    opacity: 0;
     display: none;
+    /* visibility: hidden; */
+}
+.header .menu-area .menu-wrap{
+    position: relative;
+}
+.header .menu-area .all-menu.active{
+    position: absolute;
+    top: 15px; left: 15px;
+    display: block;
+    /* visibility: visible; */
+    opacity: 1;
 }
 
 .header span.event{

@@ -13,16 +13,16 @@ $(function(){
     const curr=$(window).scrollTop();
     if (curr>0) {
       $('.header-inner').addClass('fixed')
-      $('.submenu-area').css('visibility', 'visible');
+      // $('.submenu-area').css('visibility', 'visible');
     } else {
       $('.header-inner').removeClass('fixed')
-      $('.submenu-area').css('visibility', 'hidden');
+      // $('.submenu-area').css('visibility', 'hidden');
     }
     
   })
 
 /**
- * 메뉴 열고닫기
+ * 서브메뉴 열고닫기
  *
  * @version 1.0.0
  * @since 2022-06-18
@@ -33,6 +33,8 @@ $(function(){
       e.preventDefault();
       $('.header .submenu-area').stop().slideToggle();
       $('.header .menu-area .link-more').toggleClass('active');
+      $('.header .menu-area .menu-list').toggleClass('active');
+      $('.header .menu-area .all-menu').toggleClass('active');
     })
 
 
