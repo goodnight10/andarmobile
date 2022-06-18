@@ -83,12 +83,33 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
+.product-list.list-row .desc-box{
+    padding: 15px 5% 0;
+    
+}
 .product-list.list-row .product-item{
     width: calc(50% - 5px);
 }
 
-.product-list.list-col{}
-.product-list.list-col .product-item{display: flex;}
+
+
+
+
+.product-list.list-col{
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+.product-list.list-col .product-item{
+    display: flex;
+    padding: 20px 0;
+}
+.product-list.list-col .desc-box{
+    padding: 0 28px;
+    width: calc(100% - 88px);
+}
+.product-list.list-col .product-item+.product-item{
+   border-top: 1px solid #eee;
+}
 .product-list.list-col .product-item .link-prd{width: 110px;}
 
 
@@ -122,14 +143,14 @@
 
 
 
-.product-item .sc-title{
+.sc-title{
     font-size: 20px;
     line-height: 29px;
     color: #333;
     letter-spacing: -0.05em;
     font-weight: 700;
 }
-.product-item .review{
+.desc-box .review{
     top: 0;
     margin-top: 0;
     text-align: right;
@@ -140,7 +161,7 @@
     font-size: 13px;
     line-height: 13px;
 }
-.product-item .pro-title{
+.desc-box .prd-title{
     display: -webkit-box;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -158,7 +179,7 @@
     letter-spacing: -0.05em;
 
 }
-.product-item .price{
+.desc-box .prc-dis{
     color: #333;
     padding: 0;
     font-size: 15px;
@@ -166,9 +187,8 @@
     font-weight: 500;
     letter-spacing: -0.03em;
     vertical-align: top;
-    font-family: 'Gilroy','NotoSansKR',sans-serif;
 }
-.product-item .price .discount{
+.desc-box .price .prc-curr{
     color: #8E1F29;
     font-weight: 700;
     margin-right: 5px;
@@ -176,14 +196,15 @@
     padding: 0;
     
 }
-.product-item .price del{
+.desc-box .prc-org{
     font-size: 13px;
     line-height: 18px;
     font-weight: 400;
     color: #8d8d8d;
     margin-left: 5px;
+    text-decoration: line-through;
 }
-.product-item .color{
+.desc-box .color{
     display: block;
     font-size: 13px;
     line-height: 11px;
@@ -195,7 +216,7 @@
 
     
 }
-.product-item .prize{
+.desc-box .prize{
     margin-top: 15px;
     display: inline-block;
     border: 1px solid rgba(142,31,41,0.5);
@@ -215,18 +236,17 @@
 
 /* 베스트=================================================== */
 
-.sc-best .sc-title{
+.sc-title{
     padding: 50px 16px 22px;
 }
 .sc-best .product-list{
     display: flex;
     flex-wrap: wrap;
-    flex: 1;
     width: 100%;
 }
 .sc-best .product-item{
     padding-bottom: 50px;
-    width: calc(100% - 5px);
+    width: calc(50% - 5px);
     box-sizing: border-box;
 }
 
@@ -273,10 +293,6 @@
 .sc-coupon .coupon-area{
     margin: -20px 0 20px;
 }
-/* @media (max-width: 1024px)
-.memBeneBn {
-    width: 100%;
-    margin: -20px auto 20px; */
 
 
 /* 판매=============================================== */
@@ -345,6 +361,41 @@
     padding: 50px 16px 22px;
 }
 
+.sc-new .product-item{
+    padding-bottom: 50px;
+    width: calc(50% - 5px);
+    box-sizing: border-box;
+}
+
+
+.sc-new .link-more{
+    margin: 0 38px 65px;
+    box-sizing: border-box;
+
+    display: block;
+    height: 52px;
+    line-height: 52px;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    background: #fff;
+    font-size: 15px;
+    color: #222;
+    font-weight: 500;
+    text-align: center;
+}
+
+.sc-new .link-more::after{
+    display: inline-block;
+    vertical-align: text-bottom;
+    padding-left: 5px;
+    width: 19px;
+    height: 19px;
+    background: url(../images/arrow2.png) no-repeat;
+    background-size: 19px auto;
+    background-position: center;
+    background-size:cover;
+    content:'';
+}
 
 /* 브랜드스토리============================ */
 
@@ -356,7 +407,7 @@
     background-color: #C86733;
     display: block;
 }
-.sc-brandstory .brandstory-wrap .title{
+.sc-brandstory .title{
     color: #fff;
     font-size: 18px;
     letter-spacing: -0.5px;
@@ -367,14 +418,15 @@
     padding-bottom: 5px;
     line-height: 1.2;
 }
-.sc-brandstory .brandstory-wrap .desc{
+.sc-brandstory .desc{
     font-size: 30px;
     line-height: 36px;
     letter-spacing: -0.03em;
     color: #fff;
     font-weight: 700;
+    display: block;
 }
-.sc-brandstory .brandstory-wrap .winner{
+.sc-brandstory .winner{
     padding: 10px 0 5px;
     font-size: 12px;
     line-height: 1.4;
@@ -382,7 +434,7 @@
     letter-spacing: -0.02em;
     font-weight: 400;
 }
-.sc-brandstory .brandstory-wrap .more{
+.sc-brandstory .more{
     display: inline-block;
     width: 100px;
     margin-top: 20px;
@@ -413,6 +465,7 @@
 
 
 
+
 .sc-product .prd-wrap{
     position: relative;
 }
@@ -435,34 +488,61 @@
 }
 
 
+.sc-product .link-product .badge-new{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    box-sizing: border-box;
+    width: 20%;
+    min-width: 40px;
+    z-index: 1;
+}
 
-
+.sc-product .desc-box{
+    padding: 15px 5% 0;
+}
 
 
 
 /*하단배너들 ========================================================================= */
 
 
-.sc-membership{
+.company-area{
     padding-top: 70px;
 }
-.sc-membership .link-membership{
+.company-area .sc-membership{
+    
+    box-sizing: border-box;
+    background: url(../images/member.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+}
+
+.company-area .sc-offstore{
+    
+    box-sizing: border-box;
+    background: url(../images/offline.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.company-area .link-wrap{
+    height: 100%;
     display: block;
     padding: 65px 20px;
-    box-sizing: border-box;
-    background: url(../images/member.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
 }
-
-.sc-membership .membership-wrap .title{
+.company-area .title{
+    
     font-size: 26px;
     line-height: 31px;
     font-weight: 700;
     letter-spacing: -0.02em;
     color: #fff;
 }
-.sc-membership .membership-wrap .desc{
+.company-area .desc{
     font-size: 15px;
     line-height: 1.4;
     font-weight: 400;
@@ -471,47 +551,7 @@
     padding: 15px 0 30px;
     box-sizing: border-box;
 }
-.sc-membership .membership-wrap .btn{
-    border: 1px solid #fff;
-    padding: 7px 25px 8px;
-    color: #fff;
-    font-size: 15px;
-    line-height: 18px;
-    letter-spacing: -0.03em;
-    display: inline-block;
-    box-sizing: border-box;
-}
-
-
-.sc-offstore{
-    margin-top: 10px;
-}
-.sc-offstore .link-offstore{
-    display: block;
-    padding: 80px 20px 74px;
-    box-sizing: border-box;
-    background: url(../images/offline.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.sc-offstore .offstore-wrap{}
-.sc-offstore .offstore-wrap .title{
-    font-size: 26px;
-    line-height: 31px;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    color: #fff;
-}
-.sc-offstore .offstore-wrap .desc{
-    font-size: 15px;
-    line-height: 1.4;
-    font-weight: 400;
-    letter-spacing: -0.02em;
-    color: #fff;
-    padding: 15px 0 30px;
-    box-sizing: border-box;
-}
-.sc-offstore .offstore-wrap .btn{
+.company-area .btn{
     border: 1px solid #fff;
     padding: 7px 25px 8px;
     color: #fff;
