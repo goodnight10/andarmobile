@@ -256,7 +256,7 @@ img{
     right: -7px;
 }
 
-.header .submenu-area.fixed{
+.header .fixed .submenu-area{
     visibility:visible;
     opacity: 1;
 }

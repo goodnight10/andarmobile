@@ -7,16 +7,13 @@ $(function(){
  * @author jy
  */
 
-  // 
-  
+//  
   $(window).scroll(function(){
     const curr=$(window).scrollTop();
     if (curr>0) {
       $('.header-inner').addClass('fixed')
-      $('.submenu-area').addClass('fixed')
     } else {
       $('.header-inner').removeClass('fixed')
-      $('.submenu-area').removeClass('fixed')
     }
     
   })
@@ -28,7 +25,9 @@ $(function(){
  * @since 2022-06-18
  * @author jy
  */
-    // 
+    // $('.header .menu-area .link-more').toggleClass('active');
+      // $('.header .menu-area .menu-list').toggleClass('active');
+      // $('.header .menu-area .all-menu').toggleClass('active');
     $('.header .menu-area .link-more').click(function(e){
       e.preventDefault();
       $('.header .submenu-area').stop().slideToggle();
