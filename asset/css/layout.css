@@ -156,6 +156,79 @@
 .header .fixed .btn-mypage::after{background: url(../images/my-b.png) no-repeat center/100%;}
 
 
+.header .search-page{
+    /* visibility: hidden; */
+    display: none;
+    opacity: 0;
+}
+.header .search-page.fixed{
+    /* visibility: visible; */
+    opacity: 1;
+    display: block;
+    position: relative;
+    width: 100vw; 
+    height: 100vh;
+    margin-left: calc(-50vw + 50%);
+
+    background: url(../images/searchbg.jpg) center/100%;
+    position: fixed;
+    z-index: 21;
+}
+.header .fixed .link-back{
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 18px 4.17%;
+    cursor: default;
+}
+.header .fixed .link-back::after{
+    background: url(../images/searcharrow.png) center/100%;
+    width: 10px;
+    height: 18px;
+    display: block;
+    content: '';
+}
+
+.header .fixed form{
+    display: flex;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+.header .fixed .search-input{
+    height: 45px;
+    margin: 0;
+    padding: 0 6.55% 0 0;
+    border-bottom: 2px solid #fff;
+    background: none;
+    height: 43px;
+    background: transparent;
+    width: 100%;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 43px;
+}
+.header .fixed .search-input::placeholder{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 43px;
+}
+.header .fixed.search-page .btn-search{
+    cursor: default;
+    position: absolute;
+    right: 0px; top: 10px;
+
+}
+.header .fixed.search-page .btn-search::after{
+    display: block;
+    background: url(../images/searchbtn.png) center/100%;
+    height: 19px; width: 19px;
+    content: '';
+}
+
 
 
 .header .menu-area{

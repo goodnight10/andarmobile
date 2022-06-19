@@ -37,6 +37,27 @@ $(function(){
     })
 
 
+    
+/**
+ * 검색창 열고닫기
+ *
+ * @version 1.0.0
+ * @since 2022-06-19
+ * @author jy
+ */
+  //
+      $('.header .btn-search').click(function(e){
+        e.preventDefault();
+          $('.search-page').addClass('fixed')
+        
+      })
+      $('.header .link-back').click(function(e){
+        e.preventDefault();
+          $('.search-page').removeClass('fixed')
+        
+      })
+  
+
  /**
   * 메뉴펼치면 배경 어두워지게
   *
