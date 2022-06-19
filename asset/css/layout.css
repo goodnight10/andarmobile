@@ -420,7 +420,7 @@ img{
     right: 0; top: 0;
     background: url(../images/dropdown.png) no-repeat center;
 }
-.gnb-area .category-wrap .btn-category.more.active:after{
+.gnb-area .category-wrap .more.active:after{
     transform: rotate(180deg);
 }
 .gnb-area .category-wrap .category-item>a{
@@ -727,7 +727,6 @@ img{
     width: 27px; height: 31px;
     padding-top: 4px;
 }
-/* 간격 좀 좁은듯?수치는 맞는데 */
 
 
 
