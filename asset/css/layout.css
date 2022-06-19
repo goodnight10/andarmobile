@@ -228,17 +228,15 @@ img{
 }
 .header .menu-area .all-menu{
     opacity: 0;
-    display: none;
-    /* visibility: hidden; */
+    visibility: hidden;
+    position: absolute;
+    top: 15px; left: 15px;
 }
 .header .menu-area .menu-wrap{
     position: relative;
 }
 .header .menu-area .all-menu.active{
-    position: absolute;
-    top: 15px; left: 15px;
-    display: block;
-    /* visibility: visible; */
+    visibility: visible;
     opacity: 1;
 }
 
