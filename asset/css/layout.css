@@ -168,7 +168,6 @@
     position: relative;
     width: 100vw; 
     height: 100vh;
-    margin-left: calc(-50vw + 50%);
 
     background: url(../images/searchbg.jpg) center/100%;
     position: fixed;
