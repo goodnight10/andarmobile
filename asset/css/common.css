@@ -3,7 +3,6 @@
     src: url('../fonts/NotoSansKR-Light-Hestia.woff') format('woff');
     font-weight: 300;
 }
-/* 웹용폰트woff 웹용폰트 압축되면 woff2 */
 @font-face {
     font-family: 'noto';
     src: url('../fonts/NotoSansKR-Regular-Hestia.woff') format('woff');

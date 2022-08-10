@@ -3,9 +3,6 @@
 
 /* 헤더부분 슬라이드================================ */
 
-/* .header .swiper-wrappe.no{
-    display: none;
-} */
 
 
 .header .top-slide .swiper-slide{
@@ -104,7 +101,7 @@
     background-position: center;
     background-size: 100%; 
     content: '';    
-    width: 18px; height: 17px;
+    width: 20px; height: 20px;
 }
 .header .logo-area .btn{
     width: 40px; height: 40px;
@@ -157,12 +154,10 @@
 
 
 .header .search-page{
-    /* visibility: hidden; */
     display: none;
     opacity: 0;
 }
 .header .search-page.fixed{
-    /* visibility: visible; */
     opacity: 1;
     display: block;
     position: relative;
@@ -315,7 +310,7 @@ img{
 .header span.event{
     position: relative;
 }
-/* 이벤트 클래스명을 가진 span만 사용가능함 */
+
 .header span.event::after{
     content: '';
     position: absolute;
@@ -421,7 +416,6 @@ img{
 .gnb-area .login-wrap .top{}
 .gnb-area .login-wrap .top .btn-close{
     display: block;
-    /* relative없는거같은데??? */
     position: absolute;
     width: 24px;
     height: 24px;
@@ -440,8 +434,6 @@ img{
     text-align: center;
     vertical-align: top;
     background: #0e0e0e;
-    /* width: auto;
-    height: auto; */
     padding: 10px 26px;
     font-size: 13px;
     line-height: 15px;
@@ -545,7 +537,6 @@ img{
     height: auto;
     padding-bottom: 15px;
 }
-.gnb-area .category-wrap .btn-items{}
 .gnb-area .category-wrap .link-sub{
     display: block;
     padding: 11px 0;
@@ -585,7 +576,6 @@ img{
     letter-spacing: -0.02em;
     color: #222;
 }
-.gnb-area .event-wrap .all{}
 .gnb-area .event-wrap .desc{
     font-size: 12px;
     line-height: 16px;
@@ -744,7 +734,6 @@ img{
 }
 
 .footer .company .add-area p{
-    /* display: inline-block; */
     font-size: 11px;
     line-height: 21px;
     font-weight: 400;
@@ -802,11 +791,6 @@ img{
 
 
 
-
-
-/* 트랜지션은 기본에 들어가 있어야 사라질 때 나타날때 적용됨.
-디스플레이 말고 visibility와 opacity주기 */
-/* 꾸미는건 기본에 다 꾸미고 숨겨만 주기, active클래스는 나타내기만 하기 */
 .footer .fixed-area {
     
     transition: 0.5s;

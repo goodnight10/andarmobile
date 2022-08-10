@@ -25,9 +25,7 @@ $(function(){
  * @since 2022-06-18
  * @author jy
  */
-    // $('.header .menu-area .link-more').toggleClass('active');
-      // $('.header .menu-area .menu-list').toggleClass('active');
-      // $('.header .menu-area .all-menu').toggleClass('active');
+   
     $('.header .menu-area .link-more').click(function(e){
       e.preventDefault();
       $('.header .submenu-area').stop().slideToggle();
@@ -97,6 +95,7 @@ $(function(){
     })
     
     /**
+     * upper클릭시 최상단
      * 톡상담 영역 스크롤 내리면 사라지고 올리면 나타나게
      *
      * @version 1.0.0
@@ -105,6 +104,11 @@ $(function(){
      */
   
     // 
+    $( '.upper' ).click( function() {
+      $( 'html, body' ).animate( { scrollTop : 0 }, 300 );
+      return false;
+    } );
+
     let last=0;
     $(window).scroll(function(){
       const curr = $(window).scrollTop();

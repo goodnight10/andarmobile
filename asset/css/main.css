@@ -1,10 +1,9 @@
 /* 슬라이드==================================================== */
-.sc-slide{}
+
 .sc-slide .swiper{
     position: relative;
     height: calc(100vh - 140px);
 }
-.sc-slide .swiper .swiper-wrapper{}
 .sc-slide .swiper .swiper-slide{
     position: relative;
 }
@@ -70,10 +69,7 @@
 }
 
 
-/* 공통폰트============================================== */
 
-.product-list{}
-.product-list .product-item{}
 
 .product-list.list-row{
     display: flex;
@@ -114,6 +110,7 @@
 
 .product-item .link-product{
     position: relative;
+    
 }
 .product-item .link-product .pro-img{
     width: 100%;
@@ -293,7 +290,6 @@
 
 
 /* 판매=============================================== */
-.sc-sell{}
 .sc-sell .link-sell .desc{
     padding: 20px 16px 0 16px;
     box-sizing: border-box;
@@ -305,10 +301,7 @@
     padding-top: 40px;
 }
 
-/* 클래스 주기
-.sc-sell > {
-    padding-top: 40px;
-} */
+
 .sc-sell .sell-wrap h3{
     font-size: 26px;
     line-height: 35px;
@@ -353,7 +346,6 @@
 
 /* 이달의 신상====================================================== */
 
-.sc-new{}
 .sc-new .sc-title{
     padding: 50px 16px 22px;
 }
@@ -480,7 +472,6 @@
     background-image: url(../images/arrow4.png);
     background-repeat: no-repeat;
     background-size: 15px auto;
-    /* 왜 center만 하면 화살표 위치 이상해지는지 */
     background-position: calc(100% - 0px) center;
 }
 
